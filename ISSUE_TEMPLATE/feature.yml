@@ -1,0 +1,65 @@
+name: ✨ Feature Request
+description: Propose a new feature or capability.
+title: "[Feature]: "
+labels: ["feature"]
+body:
+
+* type: markdown
+  attributes:
+  value: |
+  ## Feature request ✨
+
+  ```
+  Describe the problem or opportunity and the value this feature would provide.
+  ```
+
+* type: textarea
+  id: problem
+  attributes:
+  label: Problem / opportunity
+  description: What problem are we trying to solve?
+  placeholder: |
+  As a user/team, I need...
+  because...
+  validations:
+  required: true
+
+* type: textarea
+  id: proposal
+  attributes:
+  label: Proposed solution
+  description: Describe the expected behavior or proposed solution.
+  validations:
+  required: true
+
+* type: textarea
+  id: acceptance
+  attributes:
+  label: Acceptance criteria
+  description: Define what must be true for this feature to be considered complete.
+  placeholder: |
+  - [ ] ...
+  - [ ] ...
+  - [ ] ...
+
+* type: textarea
+  id: alternatives
+  attributes:
+  label: Alternatives considered
+  description: Describe alternative solutions or approaches that were considered.
+
+* type: textarea
+  id: impact
+  attributes:
+  label: Impact
+  description: Mention affected services, users, APIs, databases, infrastructure, or integrations.
+
+* type: checkboxes
+  id: checklist
+  attributes:
+  label: Checklist
+  options:
+  - label: I have searched for existing issues.
+  required: true
+  - label: The problem and expected outcome are clearly described.
+  required: true

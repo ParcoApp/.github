@@ -1,0 +1,56 @@
+name: 🔧 Task
+description: Track technical work, maintenance, refactoring, or other engineering tasks.
+title: "[Task]: "
+labels: ["chore"]
+body:
+
+* type: markdown
+  attributes:
+  value: |
+  ## Task 🔧
+
+  ```
+  Use this issue for technical work that is not primarily a bug or product feature.
+  ```
+
+* type: textarea
+  id: objective
+  attributes:
+  label: Objective
+  description: What needs to be done and why?
+  validations:
+  required: true
+
+* type: textarea
+  id: scope
+  attributes:
+  label: Scope
+  description: Describe what is included and, if useful, what is explicitly out of scope.
+  validations:
+  required: true
+
+* type: textarea
+  id: acceptance
+  attributes:
+  label: Acceptance criteria
+  description: Define how we know the task is complete.
+  placeholder: |
+  - [ ] ...
+  - [ ] ...
+  - [ ] ...
+
+* type: textarea
+  id: impact
+  attributes:
+  label: Impact
+  description: Mention affected services, infrastructure, dependencies, or teams.
+
+* type: checkboxes
+  id: checklist
+  attributes:
+  label: Checklist
+  options:
+  - label: Scope is clearly defined.
+  required: true
+  - label: Acceptance criteria are defined.
+  required: true
