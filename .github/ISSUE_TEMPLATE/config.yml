@@ -1,0 +1,14 @@
+# Configuración del selector de issues.
+# Docs: https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
+
+# Si es false, obliga a usar una de las plantillas (no permite issues en blanco).
+blank_issues_enabled: false
+
+# Enlaces de contacto que aparecen en el selector, junto a las plantillas.
+contact_links:
+  - name: 💬 Preguntas y discusión
+    url: https://github.com/orgs/ParcoApp/discussions
+    about: Para dudas de uso o ideas, usa Discussions en lugar de un issue.
+  - name: 🔒 Reportar una vulnerabilidad
+    url: mailto:tech.accounts@parcoapp.com
+    about: No abras un issue público. Repórtalo por correo o en la pestaña Security del repositorio afectado.

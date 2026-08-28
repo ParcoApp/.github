@@ -1,0 +1,65 @@
+name: 🐛 Bug Report
+description: Report a reproducible problem or unexpected behavior.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Bug report 🐛
+
+        Please provide enough information to reproduce and investigate the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clearly describe the problem and the expected behavior.
+      placeholder: Describe what happened and what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the minimum steps needed to reproduce the issue.
+      placeholder: |
+        1. Go to...
+        2. Execute...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "Production / Staging / Development"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / errors
+      description: Include relevant logs or error messages. Remove secrets and sensitive information.
+      render: shell
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add screenshots, requests, payloads, related issues, or other relevant information.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for existing issues.
+          required: true
+        - label: I have provided enough information to reproduce the issue.
+          required: true
+        - label: I have removed secrets and sensitive information.
+          required: true
